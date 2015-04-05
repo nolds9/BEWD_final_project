@@ -1,1 +1,9 @@
-%h1 All Jobs
+- @jobs.each do |job|
+	%h2= link_to job.name, job
+	%p= job.company
+	%p= time_ago_in_words(job.created_at)
+
+= link_to 'New Job', new_job_path
+
+
+
