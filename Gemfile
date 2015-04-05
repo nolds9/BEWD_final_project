@@ -43,3 +43,13 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'pry-rails'
+gem 'devise'
+# gem 'bootstrap-sass'
+# gem 'httparty'
+# gem 'cocoon'
+gem 'simple_form'
+# gem 'paperclip'
+gem 'haml'
+gem 'aws-sdk'
+
