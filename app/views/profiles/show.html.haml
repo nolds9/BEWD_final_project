@@ -1,5 +1,6 @@
-%br
-%br
-%br
-%br
-%h1 Profile Page
+.wrapper_with_padding
+	#profile_show
+		%h1.title= @profile.first_name
+		%p= simple_format(@profile.current_company)
+		%p= simple_format(@profile.notes)
+

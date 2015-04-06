@@ -1,6 +1,12 @@
-%br
-%br
-%br
-%br
-%br
-%h1 All Candidates
+.wrapper_with_padding
+	#profiles.clearfix
+		- unless @profiles.blank?
+			- @profiles.each do |profile|
+				.profile
+					%p.title= profile.first_name
+					%p.title= profile.last_name
+					%p.date= time_ago_in_words(profile.created_at)
+		- else
+			%h2 Add a profile
+			%p It appears you haven't created any profiles yet... Lets fix that. Why don't you go ahead and create a new profile.
+			%p= link_to "New Candidate", new_job_profile_path(@job)
