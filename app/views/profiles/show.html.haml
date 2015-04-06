@@ -1,6 +1,9 @@
 .wrapper_with_padding
 	#profile_show
-		%h1.title= @profile.first_name
+		%h1.title= @profile.first_name  + (' ') +  @profile.last_name
 		%p= simple_format(@profile.current_company)
 		%p= simple_format(@profile.notes)
+		%p= simple_format(@profile.status)
+		%p= simple_format(@profile.profile_url)
+
 
