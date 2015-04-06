@@ -52,4 +52,4 @@ gem 'simple_form'
 # gem 'paperclip'
 gem 'haml'
 gem 'aws-sdk'
-
+gem 'rails_12factor', group: :production
