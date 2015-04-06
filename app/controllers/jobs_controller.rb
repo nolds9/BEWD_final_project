@@ -7,7 +7,7 @@ class JobsController < ApplicationController
 	end
 
 	def show
-
+		@profiles = @job.profiles
 	end
 
 	def new
