@@ -1,9 +1,12 @@
-- @jobs.each do |job|
-	%h2= link_to job.name, job
-	%p= job.company
-	%p= time_ago_in_words(job.created_at)
-
-= link_to 'New Job', new_job_path
-
-
-
+.wrapper_with_padding
+	#jobs.clearfix
+		- unless @jobs.blank?
+			- @jobs.each do |job|
+				%a{ href: (url_for [job])}
+					.job
+						%p.title= job.name
+						%p.date= time_ago_in_words(job.created_at)
+		- else
+			%h2 Add a job
+			%p It appears you haven't created any jobs yet... Lets fix that. Why don't you go ahead and create a new job.
+			%p= link_to "New Note", new_note_path

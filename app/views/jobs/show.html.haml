@@ -1,7 +1,9 @@
-%h1= @job.name
-%p=  @job.company
-%p=  @job.description
+.wrapper_with_padding
+	#job_show
+		%h1.title= @job.name
+		%p= simple_format(@job.company)
+		%p= simple_format(@job.description)
 
-%p= link_to 'All Jobs', jobs_path
-%p= link_to 'Edit Job', edit_job_path(@job)
-%p= link_to 'Delete', job_path(@job), method: :delete, data: { confirm: "Are you Sure?" }
+		.buttons
+			= link_to "Edit", edit_job_path(@job), class: "button"
+			= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" }, class: "button"

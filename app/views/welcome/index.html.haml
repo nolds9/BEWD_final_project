@@ -1,1 +1,33 @@
-%h1 Welcome to Blue Ribbon ATS
+#banner
+	.banner_content
+		%h1 Blue Ribbon
+		%p Your online platform to easily track current jobs and candidates.
+		.buttons
+			%p= link_to "Sign Up", new_user_registration_path
+#testimonial
+	.wrapper
+		%p.quote "I use it everyday."
+		%p.name - Barack Obama
+#callouts
+	.callout_inner
+		.wrapper
+			.callout
+				%h2 Jobs
+				%p Manage all current projects and job postings through a powerful dashboard, with filterable categories.
+
+			.callout
+				%h2 Candidates
+				%p Built to help organize all candidates in one place. Easibly searchable and connected with LinkedIn.
+
+			.callout
+				%h2 Social
+				%p One-click away from sharing profiles to hiring managers for review.
+#bottom_cta
+	.wrapper
+		%h2 Save Time, Save Money!
+		%p The go-to for conquering your recruitment needs and bottlenecks.
+	.buttons
+		%button= link_to "Unlock your Potential", new_user_registration_path
+
+%footer
+	%p &copy; Danger Zone Society
