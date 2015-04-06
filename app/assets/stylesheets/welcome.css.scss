@@ -1,5 +1,5 @@
 #banner {
-	background-image: image-url(("welcome_banner_image.jpg"));
+	background-image: image-url("welcome_banner_image.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -41,7 +41,7 @@
 }
 
 #callouts {
-	background-image: image-url(("callout_background.jpg"));
+	background-image: #000 image-url("callout_background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
