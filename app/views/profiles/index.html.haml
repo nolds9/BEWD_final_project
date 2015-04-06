@@ -5,4 +5,6 @@
 				%p.title= link_to profile.first_name + (' ') + profile.last_name, job_profile_path(@job,profile)
 				%p.date= time_ago_in_words(profile.created_at)
 			%br
+		.buttons
+			= link_to "Share with Hiring Manager", jobs_path, class: "button"
 	
