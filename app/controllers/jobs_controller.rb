@@ -2,7 +2,7 @@ class JobsController < ApplicationController
 	before_action :find_job, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@jobs = Job.all.order("created_at DESC")
+		@jobs = Job.where(user_id: current_user)
 
 	end
 
